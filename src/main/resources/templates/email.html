@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Date registered</th>
+        </tr>
+        <tr th:each="row : ${personsInThymeleaf}">
+            <td>[[${row.name}]]</td>
+            <td>[[${row.age}]]</td>
+            <td>[[${row.dateRegistered}]]</td>
+        </tr>
+    </table>
+</body>
+</html>
